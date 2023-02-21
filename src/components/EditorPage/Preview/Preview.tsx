@@ -1,3 +1,4 @@
+import ProductItem from "@/components/global/ProductItem/ProductItem";
 import Image from "next/image";
 import styles from "./Preview.module.scss";
 const Preview = ({ show }: { show: boolean }) => {
@@ -19,50 +20,10 @@ const Preview = ({ show }: { show: boolean }) => {
         </div>
         <div className={styles.preview__items}>
           <div className={styles.preview__itemsList}>
-            <div className={styles.preview__item}>
-              <Image
-                src="icons/document.svg"
-                width={22}
-                height={26}
-                alt="item"
-                style={{ margin: "30px auto" }}
-              />
-              <p>-</p>
-              <p>-</p>
-            </div>
-            <div className={styles.preview__item}>
-              <Image
-                src="icons/document.svg"
-                width={22}
-                height={26}
-                alt="item"
-                style={{ margin: "30px auto" }}
-              />
-              <p>-</p>
-              <p>-</p>
-            </div>
-            <div className={styles.preview__item}>
-              <Image
-                src="icons/document.svg"
-                width={22}
-                height={26}
-                alt="item"
-                style={{ margin: "30px auto" }}
-              />
-              <p>-</p>
-              <p>-</p>
-            </div>
-            <div className={styles.preview__item}>
-              <Image
-                src="icons/document.svg"
-                width={22}
-                height={26}
-                alt="item"
-                style={{ margin: "30px auto" }}
-              />
-              <p>-</p>
-              <p>-</p>
-            </div>
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
           </div>
           <div className={styles.preview__footer}>
             <p>
