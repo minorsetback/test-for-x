@@ -1,0 +1,189 @@
+.profile {
+  width: calc((100% - 176px) / 2);
+  min-height: calc(100vh - 48px);
+  height: calc(100% - 48px);
+  background: #f2f2f2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile__settings {
+  width: 177px;
+  margin: 70px auto;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.profile__photo {
+  margin: 0 auto;
+  display: flex;
+  border: 1.5px solid #000000;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile__name {
+  width: 92px;
+  display: flex;
+  align-items: center;
+  margin: 6px auto;
+  justify-content: space-between;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.profile__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  margin-bottom: 0;
+}
+
+.profile__edit {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  cursor: pointer;
+  padding: 13px 25px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.profile__color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.profile__product {
+  margin: 0 15.5px 0 15.5px;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 26px 26px 0px 0px;
+  position: relative;
+  min-height: 430px;
+  height: calc(100vh - 372px);
+  margin-top: 60px;
+}
+
+.profile__addProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 16px;
+  gap: 8px;
+  width: 327px;
+  height: 177px;
+  border: 1px dashed #000000;
+  border-radius: 20px;
+  margin: 29px auto;
+  & > p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+
+  & > div {
+    padding: 7px 30px;
+    gap: 4px;
+    width: 124px;
+    height: 40px;
+    background: #000000;
+    border-radius: 8px;
+    display: flex;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.profile__productName {
+  width: 144px;
+  height: 144px;
+  border: 1px dashed #000000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile__productNameWrapper {
+  display: flex;
+  width: 327px;
+  justify-content: space-between;
+  margin: 20px auto;
+  & > div > p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 13px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .profile {
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .profile__settings {
+    padding-top: 70px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .profile {
+    margin: 20px auto;
+    margin-bottom: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .profile__settings {
+    padding-top: 70px;
+    margin: 0 auto;
+  }
+
+  .profile__hidden {
+    display: none;
+  }
+  .profile__product {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
